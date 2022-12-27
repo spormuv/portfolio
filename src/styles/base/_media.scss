@@ -1,0 +1,56 @@
+@media (max-width: 1199px) {
+  .aside {
+    left: -27rem;
+  }
+  .main-content {
+    padding-left: 0;
+  }
+  .about__info-item {
+    p {
+      span {
+        display: block;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .home {
+    &__photo {
+      display: none;
+    }
+    &__info {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .service__item,
+  .portfolio__item,
+  .contacts__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__edu,
+  .about__experience,
+  .about__info,
+  .about__skills,
+  .service__item,
+  .portfolio__item,
+  .contacts__item,
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .about__info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
