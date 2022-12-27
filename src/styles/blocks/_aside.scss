@@ -11,13 +11,13 @@
   align-items: center;
   z-index: 10;
   border-right: 1px solid var(--bg-black-50);
+  transition: all 0.3s ease;
   &__toggler {
     position: fixed;
     left: 30rem;
     top: 2rem;
     height: 4rem;
     width: 4.5rem;
-    // display: flex;
     display: none;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,7 @@
     border-radius: 0.5rem;
     cursor: pointer;
     background: var(--bg-black-100);
+    transition: all 0.3s ease;
     span {
       position: relative;
       display: inline-block;
@@ -109,6 +110,22 @@
     }
     i {
       margin-right: 1.5rem;
+    }
+  }
+}
+
+.aside__toggler {
+  &.open {
+    span {
+      background-color: transparent;
+      &::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        top: 0;
+      }
     }
   }
 }

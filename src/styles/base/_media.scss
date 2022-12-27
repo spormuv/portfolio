@@ -1,16 +1,32 @@
+@media (min-width: 1200px) {
+  .portfolio__img {
+    height: 25rem;
+  }
+}
+
 @media (max-width: 1199px) {
   .aside {
     left: -27rem;
     &__toggler {
       display: flex;
       left: 3rem;
+      &.open {
+        left: 30rem;
+      }
+    }
+    &.open {
+      left: 0;
     }
   }
-  // .main-content {
-  //   padding-left: 0;
-  // }
+
   .section {
     left: 0;
+    &.open {
+      left: 27rem;
+    }
+    .container {
+      padding-top: 7rem;
+    }
   }
   .about__info-item {
     p {
@@ -19,6 +35,9 @@
         margin-left: 0;
       }
     }
+  }
+  .portfolio__img {
+    height: 25rem;
   }
 }
 
@@ -38,6 +57,9 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .portfolio__img {
+    height: 35rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -51,6 +73,9 @@
   .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .portfolio__img {
+    height: 40rem;
   }
 }
 

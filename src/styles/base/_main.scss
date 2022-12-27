@@ -63,15 +63,14 @@ body {
   right: 0;
   bottom: 0;
   z-index: 0;
-  opacity: 1;
   overflow-y: auto;
   overflow-x: hidden;
+  transition: all 0.3s ease;
   &.back-section {
     z-index: 1;
   }
   &.active {
     z-index: 2;
-    opacity: 1;
     animation: slideSection 1s ease;
   }
   .container {
@@ -112,10 +111,6 @@ body {
 .hidden {
   display: none !important;
 }
-
-// .main-content {
-//   padding-left: 27rem;
-// }
 
 .padd-15 {
   padding-left: 1.5rem;

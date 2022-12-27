@@ -1,5 +1,6 @@
-@import 'styles/base/main';
+// @import 'libs/all.min.css';
 
+@import 'styles/base/main';
 @import 'styles/blocks/aside';
 @import 'styles/blocks/home';
 @import 'styles/blocks/about';
@@ -7,5 +8,4 @@
 @import 'styles/blocks/portfolio';
 @import 'styles/blocks/contacts';
 @import 'styles/blocks/switcher';
-
 @import 'styles/base/media';
