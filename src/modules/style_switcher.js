@@ -4,6 +4,7 @@ import {
   styleSwitcherToggle,
   styleSwitcher,
   switcherColors,
+  dayNight,
 } from './variables';
 
 // toggle style switcher
@@ -24,3 +25,16 @@ switcherColors.addEventListener('click', function (e) {
 });
 
 // theme light / dark
+window.addEventListener('load', function () {
+  if (document.body.classList.contains('dark')) {
+    dayNight.firstElementChild.classList.add('fa-sun');
+  } else {
+    dayNight.firstElementChild.classList.add('fa-moon');
+  }
+});
+
+dayNight.addEventListener('click', function () {
+  dayNight.firstElementChild.classList.toggle('fa-sun');
+  dayNight.firstElementChild.classList.toggle('fa-moon');
+  document.body.classList.toggle('dark');
+});
