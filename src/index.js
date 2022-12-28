@@ -23,8 +23,9 @@ const btnHire = document.querySelector('.btn_hire');
 const typed = new Typed('.home__info-typing', {
   strings: ['Web Designer', 'Web Developer', 'Graphic Designer'],
   typeSpeed: 100,
-  backSpeed: 60,
   loop: true,
+  fadeOut: true,
+  fadeOutDelay: 200,
 });
 
 /*---------- style switcher
